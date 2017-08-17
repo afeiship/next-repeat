@@ -1,7 +1,6 @@
 (function () {
 
-  var global = global || window || self || this;
-
+  var global = global || this || self || window;
   var nx = global.nx || require('next-js-core2');
 
   nx.repeat = function(inChar,inCount){
