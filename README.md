@@ -10,5 +10,6 @@ npm install -S @feizheng/next-repeat
 ```js
 import '@feizheng/next-repeat';
 
-//DOCS here!
+nx.repeat('abc', 2);
+// => 'abcabc'
 ```

@@ -3,7 +3,7 @@
  * description: Repeat for next.
  * url: https://github.com/afeiship/next-repeat
  * version: 1.0.0
- * date: 2020-01-06 12:44:28
+ * date: 2020-01-06 12:46:38
  * license: MIT
  */
 
@@ -12,6 +12,7 @@
   var nx = global.nx || require('@feizheng/next-js-core2');
 
   nx.repeat = function(inChar, inCount) {
+    if(!inCount) return '';
     var arr = new Array(inCount + 1);
     return arr.join(inChar);
   };
