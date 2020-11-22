@@ -3,7 +3,7 @@
  * description: Repeat for next.
  * homepage: https://github.com/afeiship/next-repeat
  * version: 1.0.0
- * date: 2020-11-22 18:16:28
+ * date: 2020-11-22 18:17:13
  * license: MIT
  */
 
