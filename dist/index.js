@@ -1,18 +1,18 @@
 /*!
- * name: @feizheng/next-repeat
+ * name: @jswork/next-repeat
  * description: Repeat for next.
- * url: https://github.com/afeiship/next-repeat
+ * homepage: https://github.com/afeiship/next-repeat
  * version: 1.0.0
- * date: 2020-01-06 12:46:38
+ * date: 2020-11-22 18:16:28
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.repeat = function(inChar, inCount) {
-    if(!inCount) return '';
+  nx.repeat = function (inChar, inCount) {
+    if (!inCount) return '';
     var arr = new Array(inCount + 1);
     return arr.join(inChar);
   };
@@ -21,5 +21,3 @@
     module.exports = nx.repeat;
   }
 })();
-
-//# sourceMappingURL=next-repeat.js.map
