@@ -1,9 +1,18 @@
 import nx from '@jswork/next';
 
-nx.repeat = function (inChar, inCount) {
+const defaults = {
+  joinChar: ''
+};
+
+nx.repeat = function (inChar, inCount, inOptions) {
+  const options = nx.mix(null, defaults, inOptions);
   if (!inCount) return '';
-  var arr = new Array(inCount + 1);
-  return arr.join(inChar);
+  const arr = new Array(inCount + 1);
+  const char = inChar + options.joinChar;
+  const joinChatLength = options.joinChar.length;
+  const result = arr.join(char);
+  const sliceCount = result.length - joinChatLength;
+  return result.slice(0, sliceCount);
 };
 
 if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
