@@ -17,6 +17,9 @@ import '@jswork/next-repeat';
 
 nx.repeat('abc', 2);
 // => 'abcabc'
+
+nx.repeat('abc', 2, { joinChar: '-'});
+// => 'abc-abc'
 ```
 
 ## license
